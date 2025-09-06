@@ -172,10 +172,10 @@ def apt_select():
     if args.ping_only or archives.abort_launch:
         archives.top_list = archives.ranked[:args.top_number]
 
-    sources.set_current_archives()
-    current_url = sources.urls['current']
-    if archives.urls.get(current_url):
-        archives.urls[current_url]['Host'] += " (current)"
+    # sources.set_current_archives()
+    # current_url = sources.urls['current']
+    # if archives.urls.get(current_url):
+    #     archives.urls[current_url]['Host'] += " (current)"
 
     show_status = False
     max_host_len = 0
